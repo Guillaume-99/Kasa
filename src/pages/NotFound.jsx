@@ -1,9 +1,11 @@
+import '../assets/scss/NotFound.scss';
+
 function NotFound() {
     return (
-        <div>
+        <div className="NotFound">
             <h1>404</h1>
             <p>Oups ! La page que vous demandez n’existe pas.</p>
-            {/* plus tard : lien pour revenir à l’accueil */}
+            <a href="/">Retourner sur la page d’accueil</a>
         </div>
     );
 }

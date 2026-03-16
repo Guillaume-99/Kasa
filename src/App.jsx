@@ -1,17 +1,18 @@
 import './App.scss';
 import { Outlet } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="app">
-      <header>
-        <h1>Kasa</h1>
-        {/* plus tard : nav avec liens */}
-      </header>
+      <Header />
 
       <main>
         <Outlet />  {/* ici arrivent Home, About, etc. */}
       </main>
+
+      <Footer />
     </div>
   );
 }
