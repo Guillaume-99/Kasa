@@ -1,10 +1,17 @@
 import './App.scss';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <div className="app">
-      <h1>Kasa</h1>
-      <p>Point de départ du projet.</p>
+      <header>
+        <h1>Kasa</h1>
+        {/* plus tard : nav avec liens */}
+      </header>
+
+      <main>
+        <Outlet />  {/* ici arrivent Home, About, etc. */}
+      </main>
     </div>
   );
 }
