@@ -1,0 +1,58 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0em;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FF6060;
+        color: white;
+        margin: 0 4em 0 4em;
+        padding: 0 1em 0 1em;
+        border-radius: 5px;
+
+        & p {
+            font-weight: 700;
+            font-style: bold;
+        }
+
+        & i {
+            cursor: pointer;
+        }
+    }
+
+    &__content {
+        background-color: #F6F6F673;
+        color: black;
+        border-radius: 0 0 5px 5px;
+        margin: -3px 4em 1em 4em;
+        padding: 1em 1em;
+        z-index: -1;
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-5px);
+        overflow: hidden;
+        transition:
+            max-height 2s ease,
+            opacity 2s ease,
+            transform 2s ease;
+
+        &--open {
+            max-height: 300px;
+            opacity: 1;
+            transform: translateY(0px);
+            margin: -3px 4em 1em 4em;
+            padding: 1em 1em;
+            z-index: -1;
+        }
+    }
+}
+
+// Animation icone
+
+.fa-rotate-180,
+.i-close {
+    transition: all 0.5s ease;
+}

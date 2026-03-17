@@ -1,5 +1,6 @@
 import Paysage from '../assets/images/about_img.png'
 import '../assets/scss/About.scss'
+import Accordion from '../components/Accordion'
 
 function About() {
     return (
@@ -9,21 +10,13 @@ function About() {
             </div>
             <div className='contener'>
 
-                <div className='contener__widget'>
-                    <p>Fiabilité</p><i class="fa-solid fa-chevron-up"></i>
-                </div>
+                <Accordion title="Fiabilité">Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.</Accordion>
 
-                <div className='contener__widget'>
-                    <p>Respect</p><i class="fa-solid fa-chevron-up"></i>
-                </div>
+                <Accordion title="Respect">La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</Accordion>
 
-                <div className='contener__widget'>
-                    <p>Service</p><i class="fa-solid fa-chevron-up"></i>
-                </div>
+                <Accordion title="Service">La qualité du service est au cœur de notre engagement chez kasa. Nous veillons à ce que chaque intéraction, que ce soit avec nos hôtes ou nos locataires, soit empreinte de respect et de bienveillance. </Accordion>
 
-                <div className='contener__widget'>
-                    <p>Sécurité</p><i class="fa-solid fa-chevron-up"></i>
-                </div>
+                <Accordion title="Sécurité">La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien qu'à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les stantards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</Accordion>
 
             </div>
         </div>
