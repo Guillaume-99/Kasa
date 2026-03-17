@@ -1,0 +1,115 @@
+.carousel {
+    height: 400px;
+    position: relative;
+
+    &__banner {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 40%;
+        font-size: 70px;
+        color: white;
+        cursor: pointer;
+        z-index: 1;
+
+        &--right {
+            right: 0.2em;
+        }
+
+        &--left {
+            left: 0.2em;
+        }
+    }
+
+    &__counter {
+        position: absolute;
+        bottom: 0.5em;
+        left: 40%;
+        right: 40%;
+        text-align: center;
+        color: white;
+    }
+}
+
+.infoLogement {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logementDescription {
+
+    &__title {
+        color: #FF6060;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        &--tag {
+            color: white;
+            background-color: #FF6060;
+            font-size: 10px;
+            font-weight: 500;
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+        }
+    }
+}
+
+.ownerLogement {
+
+
+    &__host {
+        display: flex;
+        position: relative;
+
+        &--name {
+            color: #FF6060;
+            font-size: 20px;
+            font-weight: 500;
+
+        }
+
+        &--img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 1em;
+        }
+    }
+
+    &__rating {
+        position: absolute;
+        right: 5em;
+    }
+
+
+}
+
+.fa-star {
+    margin: 5px;
+}
+
+.star--full {
+    color: #FF6060;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.star--empty {
+    color: #E3E3E3;
+    font-size: 20px;
+    font-weight: 900;
+}
