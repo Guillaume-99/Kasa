@@ -1,8 +1,12 @@
+import '../assets/scss/Home.scss';
+import Title from '../components/TitleBckgrd';
 function Home() {
     return (
         <div>
-            <h1>Accueil Kasa</h1>
-            <p>Ici s’affichera la liste des logements.</p>
+            {/* inclure le titre
+            Inclure les cards   */}
+            <Title />
+
         </div>
     );
 }
