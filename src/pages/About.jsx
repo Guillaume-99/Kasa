@@ -1,4 +1,5 @@
-import Paysage from '../assets/images/about_img.png'
+import Title from '../components/TitleBckgrd'
+import imgAbout from '../assets/images/about_img.png'
 import '../assets/scss/About.scss'
 import Accordion from '../components/Accordion'
 
@@ -6,7 +7,7 @@ function About() {
     return (
         <div>
             <div className='banner'>
-                <img className='banner__paysage' src={Paysage} alt="montagne" />
+                <Title img={imgAbout} />
             </div>
             <div className='contener'>
 

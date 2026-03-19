@@ -1,13 +1,14 @@
 
 import '../assets/scss/TitleBckgrd.scss';
 
-function TitleBckgrd() {
+function TitleBckgrd({ img, children }) {
     return (
         <div className="bckgrd">
-            <span className='bckgrd__img'>
-            </span>
 
-            <h1 className="bckgrd__img--title">Chez vous, partout et ailleurs</h1>
+            <img className='bckgrd__img' src={img} alt="" />
+
+
+            <h1 className="bckgrd__img--title">{children}</h1>
         </div>
     );
 }
