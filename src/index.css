@@ -5,7 +5,8 @@ footer {
 }
 
 body {
-  margin: 0;
+  max-width: 1440px;
+  margin: auto;
   padding: 0;
 }
 

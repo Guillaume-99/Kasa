@@ -5,7 +5,8 @@ footer {
     align-items: center;
     background-color: black;
     margin: 0;
-    width: 100%;
+    min-width: max-content;
+    max-width: 1440px;
     height: 200px;
     box-sizing: border-box;
 
