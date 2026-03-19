@@ -9,7 +9,6 @@
         align-items: center;
         background-color: #FF6060;
         color: white;
-        margin: 0 4em 0 4em;
         padding: 0 1em 0 1em;
         border-radius: 5px;
 
@@ -27,8 +26,8 @@
         background-color: #F6F6F673;
         color: black;
         border-radius: 0 0 5px 5px;
-        margin: -3px 4em 1em 4em;
-        padding: 1em 1em;
+        margin: -3px 0em 0em 0em;
+        padding: 0.2em 1em;
         z-index: -1;
         max-height: 0;
         opacity: 0;
@@ -43,8 +42,8 @@
             max-height: 300px;
             opacity: 1;
             transform: translateY(0px);
-            margin: -3px 4em 1em 4em;
-            padding: 1em 1em;
+            margin: -3px 0em 0em 0em;
+            padding: 0.2em 1em;
             z-index: -1;
         }
     }

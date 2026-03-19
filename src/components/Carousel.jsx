@@ -7,8 +7,18 @@ function Carousel({ images }) {
     const [currentPicture, setCurrentPicture] = useState(0);
 
     const hasManyPictures = images.length > 1;
-    const previous = () => setCurrentPicture(currentPicture - 1);
-    const next = () => setCurrentPicture(currentPicture + 1);
+    const handlePictureChange = (direction) => {
+        let newCurrentPicture = currentPicture + direction;
+        if (newCurrentPicture < 0) {
+            newCurrentPicture = images.length - 1;
+        } else if (newCurrentPicture >= images.length) {
+            newCurrentPicture = 0;
+        }
+        setCurrentPicture(newCurrentPicture);
+    };
+
+    const previous = () => handlePictureChange(-1);
+    const next = () => handlePictureChange(1);
 
     return (
         <div className="carousel">
