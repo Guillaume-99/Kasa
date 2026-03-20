@@ -22,11 +22,11 @@ header {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 760px) {
     header {
         height: 45px;
         justify-content: space-between;
-        margin-top: 1em;
+        margin-top: 2em;
     }
 
     #logoHeader {
@@ -34,11 +34,10 @@ header {
     }
 
     .nav {
-        gap: 10px;
+        gap: 20px;
         padding: 0 0 0 2em;
 
         & a {
-            font-size: 16px;
 
             &:hover {
                 text-decoration: none;
@@ -47,6 +46,15 @@ header {
             &:active {
                 text-decoration: underline;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .nav {
+
+        & a {
+            font-size: 12px;
         }
     }
 }

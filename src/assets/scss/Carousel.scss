@@ -39,3 +39,18 @@
         z-index: 2;
     }
 }
+
+@media screen and (max-width: 720px) {
+    .carousel {
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .carousel {
+
+        &__arrow {
+            font-size: 40px;
+        }
+    }
+}

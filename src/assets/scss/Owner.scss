@@ -22,3 +22,19 @@
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .ownerLogement {
+
+        &__host {
+            &--name {
+                font-size: 15px;
+            }
+
+            &--img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}

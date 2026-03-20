@@ -55,3 +55,11 @@
 .i-close {
     transition: all 0.5s ease;
 }
+
+@media screen and (max-width: 400px) {
+    .accordion {
+        &__title {
+            height: 35px;
+        }
+    }
+}

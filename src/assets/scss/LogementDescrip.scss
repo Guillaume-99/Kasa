@@ -27,3 +27,12 @@
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .logementDescription {
+
+        &__location {
+            margin: 0.5em 0 0.5em 0;
+        }
+    }
+}

@@ -37,3 +37,14 @@
         }
     }
 }
+
+@media screen and (max-width: 350px) {
+    .bckgrd {
+        &__img {
+            &--title {
+                left: 1em;
+                width: auto;
+            }
+        }
+    }
+}

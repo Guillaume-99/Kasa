@@ -4,17 +4,25 @@
 
     & i {
         margin: 5px;
+        font-size: 20px;
+        font-weight: 900;
     }
 
     &__full {
         color: #FF6060;
-        font-size: 20px;
-        font-weight: 900;
+
     }
 
     &__empty {
         color: #E3E3E3;
-        font-size: 20px;
-        font-weight: 900;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .star {
+        & i {
+            font-size: 14px;
+        }
     }
 }
