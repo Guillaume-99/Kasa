@@ -18,6 +18,11 @@ main {
   margin: 0 70px;
 }
 
+/******* Retrait rectangle bleu mobile clic ********/
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 @media screen and (max-width: 720px) {
 
 
