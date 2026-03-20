@@ -15,12 +15,22 @@
         font-size: 24px;
         font-weight: 500;
         margin-top: 70px;
+        text-align: center
     }
 
     & a {
         color: black;
         margin: 90px 0;
-
+        text-align: center;
     }
 
+}
+
+@media screen and (max-width: 720px) {
+    .NotFound {
+        & h1 {
+            font-size: 100px;
+            margin-top: 1em;
+        }
+    }
 }

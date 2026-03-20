@@ -20,3 +20,9 @@ footer {
         margin: 20px 0;
     }
 }
+
+@media screen and (max-width: 720px) {
+    footer {
+        margin: 0px;
+    }
+}

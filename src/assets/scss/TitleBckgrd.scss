@@ -21,7 +21,19 @@
             font-style: bold;
             opacity: 100%;
             position: absolute;
+        }
+    }
+}
 
+@media screen and (max-width: 720px) {
+    .bckgrd {
+        height: 110px;
+        margin-top: 1em;
+
+        &__img {
+            &--title {
+                font-size: 20px;
+            }
         }
     }
 }

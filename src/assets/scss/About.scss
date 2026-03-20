@@ -5,3 +5,10 @@
 footer {
     margin-top: 3em;
 }
+
+@media screen and (max-width: 720px) {
+    .contener>* {
+        margin: 1em 0;
+    }
+
+}
