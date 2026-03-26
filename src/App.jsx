@@ -9,7 +9,8 @@ function App() {
       <Header />
 
       <main>
-        <Outlet />  {/* ici arrivent Home, About, etc. */}
+        {/* Affichage du contenu de la page  */}
+        <Outlet />
       </main>
 
       <Footer />

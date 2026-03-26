@@ -21,13 +21,13 @@ footer {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     footer {
         margin: 0px;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     footer {
         & p {
             font-size: 12px;

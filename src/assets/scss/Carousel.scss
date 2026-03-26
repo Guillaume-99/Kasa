@@ -1,11 +1,10 @@
 .carousel {
-    height: 400px;
     position: relative;
 
     &__banner {
 
         width: 100%;
-        height: 100%;
+        height: 400px;
         object-fit: cover;
         object-position: center;
         border-radius: 20px;
@@ -40,17 +39,21 @@
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .carousel {
         margin-top: 2em;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .carousel {
 
         &__arrow {
-            font-size: 40px;
+            font-size: 24px;
+        }
+
+        &__banner {
+            height: 255px;
         }
     }
 }

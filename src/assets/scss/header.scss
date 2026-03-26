@@ -22,7 +22,7 @@ header {
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     header {
         height: 45px;
         justify-content: space-between;
@@ -50,7 +50,7 @@ header {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 480px) {
     .nav {
 
         & a {
