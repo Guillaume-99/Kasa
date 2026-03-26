@@ -56,6 +56,10 @@
     transition: all 0.5s ease;
 }
 
+.fa-rotate-180 {
+    transform: rotate(-180deg);
+}
+
 @media screen and (max-width: 480px) {
     .accordion {
         &__title {
