@@ -8,7 +8,7 @@ function TitleBckgrd({ img, children }) {
             <img className='bckgrd__img' src={img} alt="" />
 
 
-            <h1 className="bckgrd__img--title">{children}</h1>
+            {children}
         </div>
     );
 }

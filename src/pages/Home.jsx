@@ -10,7 +10,7 @@ function Home() {
         <div>
             {/* inclure le titre
             Inclure les cards   */}
-            <Title img={imgHome} children="Chez vous, partout et ailleurs" />
+            <Title img={imgHome} children={<h1 className='bckgrd__img--title'>Chez vous, partout et ailleurs</h1>} />
             <CardsList />
         </div>
     );
