@@ -43,3 +43,16 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+
+    .bckgrd {
+
+        &__img {
+            &--title {
+                width: 97%;
+                padding: 0 2%;
+            }
+        }
+    }
+}
