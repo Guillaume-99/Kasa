@@ -10,7 +10,7 @@ function rating({ rate }) {
 
         <div className='star'>
             {Array.from({ length: 5 }, (_, index) => (
-                <i key={index} className={index < rating ? "fa-solid fa-star star__full" : "fa-solid fa-star star__empty"}></i>
+            <i key={index} className={index < rating ? "fa-solid fa-star star__full" : "fa-solid fa-star star__empty"}></i>
             ))}
         </div>
     )

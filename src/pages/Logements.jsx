@@ -1,18 +1,18 @@
-import '../assets/scss/Logements.scss';
+import "../assets/scss/Logements.scss";
 // création de la page logements
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate } from "react-router-dom";
 // appel json logement data
-import logements from '../data/logements.json';
+import logements from "../data/logements.json";
 //appel Carousel
-import Carousel from '../components/Carousel.jsx';
+import Carousel from "../components/Carousel.jsx";
 //appel Owner
-import Owner from '../components/Owner.jsx';
+import Owner from "../components/Owner.jsx";
 //appel Rating
-import Rating from '../components/Rating.jsx';
+import Rating from "../components/Rating.jsx";
 //appel LogementDescrip
-import LogementDescrip from '../components/LogementDescrip.jsx';
+import LogementDescrip from "../components/LogementDescrip.jsx";
 //appel Accordion
-import Accordion from '../components/Accordion.jsx';
+import Accordion from "../components/Accordion.jsx";
 
 function Logements() {
     const { id } = useParams();
@@ -22,51 +22,37 @@ function Logements() {
         return <Navigate to="/404" />;
     }
 
-
     return (
-
-        <div className='logement'>
-
+        <div className="logement">
             <Carousel images={logement.pictures} />
 
-            <div className='infoLogement'>
-
+            <div className="infoLogement">
                 <div>
-
                     <LogementDescrip logement={logement} />
-
                 </div>
 
-                <div className='owners'>
-
+                <div className="owners">
                     <Owner owner={logement.host} />
 
                     <Rating rate={logement.rating} />
-
                 </div>
-
-
             </div>
 
-            <div className='accordionSection'>
-
-                <Accordion className='accordionSection__description' title="Description" >
+            <div className="accordionSection">
+                <Accordion className="accordionSection__description" title="Description">
                     <p>{logement.description}</p>
                 </Accordion>
 
-                <Accordion className='accordionSection__equipements' title="Equipements" >
+                <Accordion className="accordionSection__equipements" title="Equipements">
                     <ul>
                         {logement.equipments.map((equipment, index) => (
                             <li key={index}>{equipment}</li>
                         ))}
                     </ul>
                 </Accordion>
-
             </div>
-
         </div>
-
-    )
+    );
 }
 
-export default Logements
+export default Logements;

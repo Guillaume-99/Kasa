@@ -1,19 +1,25 @@
-import { createBrowserRouter } from 'react-router-dom';
-import App from '../App.jsx';
-import Home from '../pages/Home.jsx';
-import Logement from '../pages/Logements.jsx';
-import About from '../pages/About.jsx';
-import NotFound from '../pages/NotFound.jsx';
+import { createBrowserRouter } from "react-router-dom";
+import App from "../App.jsx";
+import Home from "../pages/Home.jsx";
+import Logement from "../pages/Logements.jsx";
+import About from "../pages/About.jsx";
+import NotFound from "../pages/NotFound.jsx";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+    [
+        {
+            path: "/",
+            element: <App />,
+            children: [
+                { path: "/", element: <Home /> },
+                { path: "/about", element: <About /> },
+                { path: "*", element: <NotFound /> },
+                { path: "/logement/:id", element: <Logement /> },
+            ],
+        },
+    ],
+
     {
-        path: '/',
-        element: <App />,
-        children: [
-            { path: '/', element: <Home /> },
-            { path: '/about', element: <About /> },
-            { path: '*', element: <NotFound /> },
-            { path: '/logement/:id', element: <Logement /> },
-        ],
+        basename: "/Kasa",
     },
-]);
+);
